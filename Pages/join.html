@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/style.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('/Assets/bgimg.jpg');
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .signup-container {
-            background: rgba(255, 255, 255, 0.13);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .container {
             width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        h2 {
-            text-align: center;
-            color: #ffffff;
-        }
-        .input-group {
-            margin-bottom: 10px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #b5b5b5;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="date"] {
+        input[type="text"], input[type="email"], input[type="password"] {
             width: 100%;
             padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
             box-sizing: border-box;
+            border-radius: 4px;
         }
         button {
             width: 100%;
-            padding: 10px;
-            background-color: #5c67f2;
+            background-color: #4CAF50;
             color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #4a54e1;
+            opacity: 0.8;
         }
     </style>
-    <title>FitLifeHub</title>
 </head>
 <body>
-    <div class="signup-container">
-        <h2>Sign Up</h2>
+    <header class="navbar">
+        <img src="/Assets/logo.png" alt="FitLifeHub Logo" class="navbar-logo" />
+        <ul>
+            <li><a href="/Pages/join.html" class="join-button">Join Now</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="/Pages/blogs.html">Blog</a></li>
+            <li><a href="/Pages/about.html">About Us</a></li>
+            <li><a href="/Pages/gallery.html">Gallery</a></li>
+            <li><a href="/Pages/programs.html">Programs</a></li>
+            <li><a href="/index.html">Home</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h2>Signup Form</h2>
         <form>
-            <div class="input-group">
-                <label for="first_name">First Name</label>
-                <input type="text">
-            </div>
-            <div class="input-group">
-                <label for="last_name">Last Name</label>
-                <input type="text">
-            </div>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text">
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email">
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password">
-            </div>
-            <div class="input-group">
-                <label for="dob">Date of Birth</label>
-                <input type="date">
-            </div>
-            <button>Sign Up</button>
+            <label >First Name:</label>
+            <input type="text"  name="firstname" >
+
+            <label>Last Name:</label>
+            <input type="text" name="lastname" >
+
+            <label>Email:</label>
+            <input type="email" name="email" >
+
+            <label >Password:</label>
+            <input type="password" name="password" >
+
+            <button type="submit">Sign Up</button>
         </form>
     </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>
+              We are dedicated to promoting fitness and healthy living. Our
+              mission is to provide resources and support for individuals looking
+              to improve their physical and mental well-being.
+            </p>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: fitlifehub@fitness.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Fitness St., Wellness City</p>
+          </div>
+          <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">Instagram</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Fitlifehub Inc. All rights reserved.</p>
+        </div>
+      </footer>
 </body>
 </html>
